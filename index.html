@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conexión a Base de Datos</title>
+</head>
+<body>
+
+<?php
+include('main.php');
+
+// Consulta a la base de datos
+$sql = "SELECT * FROM tu_tabla";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Mostrar datos
+    while($row = $result->fetch_assoc()) {
+        echo "ID: " . $row["id"]. " - Nombre: " . $row["nombre"]. "<br>";
+    }
+} else {
+    echo "0 resultados";
+}
+
+// Cerrar conexión
+$conn->close();
+?>
+  <header>
+        <div class="caja">
+            <h1><img src="IMAGENES/Logo de la marca.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="InicioSesion.html">Inicio De Sesion</a></li>
+                    <li><a href="WILBOR.HTML">Menu</a></li>
+                    <li><a href="PRODUCTOS.HTML">Productos</a></li>
+                    <li><a href="CONTACTO.HTML">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</body>
+</html>

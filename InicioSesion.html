@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width">
+        <title>Insumos y Fragancias Wilbor</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="link rel="preconnect href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+
+                <h1><img class="logo_web" src="IMAGENES/Logo de la marca.png"></h1>
+               
+                <nav>
+                    <ul>
+                        <li><a href="InicioSesion.html">Inicio De Sesion</a></li>
+                        <li><a href="WILBOR.HTML">Menu</a></li>                        
+                        <li><a href="PRODUCTOS.HTML">Productos</a></li> 
+                        <li><a href="contacto.html">Contacto</a></li>                  
+
+
+                    </ul>
+                </nav> 
+            </div> 
+
+
+        </header>
+
+        <main>
+            <div class="login-container">
+       
+                <form class="login-form">
+                    <h1 class="login-title">Iniciar Sesión</h1>
+                    <label for="username" class="login-label">Usuario:</label>
+                    <input type="email" id="correoElectronico" class="login-input" required placeholder="email@document">
+                    <label for="password" class="login-label">Contraseña:</label>
+                    <input type="password" id="password" name="password" class="login-input" required>
+
+                    <button type="submit" class="Iniciar-Sesion">
+                        Enter                       
+                    </button> 
+
+        
+                    <div class="forgot-password">
+                        <a href="Recuperar.html">¿Olvidaste tu contraseña?</a>                        
+                    </div>
+
+                    <div class="Registrarse">
+                        <a href="registrarse.html">No tienes Cuenta / Registrarse</a>                        
+                    </div>
+                
+                </form>
+
+        </main>
+
+        <footer>            
+            <p class="copyright">&copy Copyright Insumos y Fragancias Wilbor - 2023</p>
+            
+        </footer>
+        <script>
+            document.getElementById("login-button").addEventListener("click", function(event) {
+                event.preventDefault();
+                autenticarUsuario();
+            });
+
+            function autenticarUsuario() {
+                var correoElectronico = document.getElementById("correoelectronico").value;
+                var Contraseña = document.getElementById("password").value;
+
+                //definir correo y contraseña
+
+                var correoValido = "insumosyfraganciaswilbor@gmail.com";
+                var contraseñaValida = "123456";
+
+                if (correoElectronico === correoValido && Contraseña === contraseñaValida) {
+                    alert("Autenticación Satisfactoria");window.location.href = "WILBOR.HTML";
+
+                }else {
+                    alert("Correo Electronico o Contraseña Incorrecta");
+                }
+
+            }
+
+                src="./index.js"
+            
+        </script>
+     
+    </body>
+</html>

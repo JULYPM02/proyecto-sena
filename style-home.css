@@ -1,0 +1,52 @@
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#principal1{
+    width: 100%;
+}
+
+.principal{
+    background: #FFE7FF;
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color:red;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.Nos-Caracterizamos{
+    background: #FFFFFF;
+    padding: 30px;
+    display: inline-block;
+}
+
+.items{
+    font-style: italic;
+    margin: 0 22%
+}
+
+
+
+ul{
+    width: 40%;
+    vertical-align: top;
+    margin-right: 10%;
+}
+
+.imagen-Nos-Caracterizamos{
+    width: 40%;
+}
+
